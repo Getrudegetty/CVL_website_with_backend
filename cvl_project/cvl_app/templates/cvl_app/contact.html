@@ -1,0 +1,49 @@
+{% extends 'cvl_app/base.html' %}
+{% load static %}
+
+
+{% block title %}{% endblock title %}
+{% block description %}{% endblock description %}
+{% block keywords %}{% endblock keywords %}
+
+{% block extend_header %}{% endblock extend_header %}
+
+{% block extend_footer %}{% endblock extend_footer %}
+
+{% block content %}
+ <div class="contact" id="contact" style="top: 0;">
+    <div class="Contact">
+      <h1>CONTACT US</h1>
+    </div>
+    <form action="" id="ContactForm" method="post">
+        {% csrf_token %}
+      <div class="row">
+        <div class="no1" id="inpute">
+            <label for="firstname"><i class="fa-solid fa-user"></i> First Name:</label> {{form.firstname}} 
+        </div>
+
+        <div class="no2" id="inpute">
+          <label for="lastname"><i class="fa-solid fa-user"></i> Last Name:</label> {{ form.lastname }} 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="no3" id="inpute">
+          <label for="phone"><i class="fa-solid fa-mobile-screen-button"></i> Phone Number:</label>{{ form.phone }}
+        </div>
+
+        <div class="no4">
+          <label for="email"  id="input"><i class="fa-solid fa-envelope"></i> Email:</label> {{form.email}} 
+        </div>
+      </div>
+
+      <div class="last" id="textarea">
+        <label for="message"><i class="fa-solid fa-message"></i> Your Message:</label> {{ form.message }}
+      </div>
+
+      <div class="submit">
+        <button type="submit" >SUBMIT </button>
+      </div>
+    </form>
+  </div>
+  {% endblock content %}

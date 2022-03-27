@@ -1,0 +1,113 @@
+{% extends 'cvl_app/base.html' %}
+{% load static %}
+
+
+{% block title %}{% endblock title %}
+{% block description %}{% endblock description %}
+{% block keywords %}{% endblock keywords %}
+
+{% block extend_header %}{% endblock extend_header %}
+
+{% block extend_footer %}{% endblock extend_footer %}
+
+{% block content %}
+<!-- home section -->
+
+<section class="home" id="home"  >
+      <div class="content slide-left" ;>
+      <h1>
+        MAKE GOOD DECISIONS <br /><span> ON YOUR FINANCIAL HEALTH</span>
+      </h1>
+      <p>We have skills for both individual and small businesses</p>
+      <a href="{% url 'cvl_app:services' %}" id="btn" class="slide-left">LEARN MORE</a>
+    </div>
+  </section>
+
+  <!-- services -->
+  <div class="services" id="services">
+    <h2>OUR SERVICES</h2>
+    <div class="box-container" id="pb">
+      <div class="service">
+        <img src="{% static 'book keeping.png' %}" />
+        <h3>BookKeeping</h3>
+        <p>
+          We take care of account balancing, payroll processing (setup and
+          support), and report generation through monthly book keeping
+        </p>
+        <a href="{% url 'cvl_app:services' %}" class="unda">LEARN MORE</a>
+      </div>
+      <div class="service">
+        <img src="{% static 'tax.png' %}" />
+        <h3>Tax Advisory</h3>
+        <p>
+          We are here to help you navigate thorugh your tax issues either as
+          an individual or a business with an aim of positive impact to your
+          decision
+        </p>
+        <a href="{% url 'cvl_app:services' %}" class="unda">LEARN MORE</a>
+      </div>
+
+      <div class="service">
+        <img src="{% static 'invest.png' %}" />
+        <h3>Investment Advisory</h3>
+        <p>
+          We are here to advice our clients on how to manage their securities
+          through issuing reports or analyses
+        </p>
+        <a href="{% url 'cvl_app:services' %}" class="unda">LEARN MORE</a>
+      </div>
+
+      <div class="service">
+        <img src="{%static 'consoltancy.png' %}" />
+        <h3>Management Consultancy</h3>
+        <p>
+          We wil guide and help you budget your cashflow, set and monitor key performance indicators and obtain finace or put into place succession plans.
+        </p>
+        <a href="{% url 'cvl_app:services' %}" class="unda">LEARN MORE</a>
+      </div>
+
+      <div class="service">
+        <img src="{% static 'secretarial.png' %}" />
+        <h3>Company Secretarial Services</h3>
+        <p>
+         We are here to deal with your company secretarial services like, fiing confirmation statements and accounts and also maintain your statutory records.
+        </p>
+        <a href="{% url 'cvl_app:services' %}" class="unda">LEARN MORE</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- about us -->
+  <div class="about" id="about">
+    <h1>ABOUT US</h1>
+    <div class="roow">
+      <div class="img">
+        <img src="{% static 'Financial data-amico.png' %}" />
+      </div>
+      <div class="words">
+        <h4>
+          We support businesses like yours by letting <strong>YOU</strong> take the credit as <strong>WE</strong> process the
+          debit.
+        </h4>
+        <p>
+          Chalen Ventures Limited (CVL) was founded with a huge desire to help
+          individual and small businesses, archieve their best and highest use.
+          We tend to have a deep and professional understanding in finance,
+          that blend the power of principles,partnership and data driven
+          decision making to help clients archieve more than they can imagine,
+          through leading them to making smart money decisions through
+          financial planning and consulting services
+        </p>
+        <p>
+          <div id="spn">
+            The CVL story began few years ago and are focusd on continuing to
+            evolve and adapt to new changes emaging in order to provide our
+            clients with the best services.
+          </div>
+          <br>
+         Let us empower your business/company, with professional and thoughtful advice and consultancy.
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

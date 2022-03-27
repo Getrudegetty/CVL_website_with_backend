@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="canonical" href="{{request.path}}">
+    <meta name="description" content="{% block description %}{% endblock description %}">
+    <meta name="keywords" content="{% block keywords %}{% endblock keywords %}">
+
+    <link rel="shortcut icon" href="{% static 'chalen_logo-removebg-preview.png' %}" />
+
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    {% block extend_header %}{% endblock extend_header %}
+
+</head>
+<body>
+    {% include 'cvl_app/partials/messages.html' %}
+    {% include 'cvl_app/partials/nav.html' %}
+
+    {% block content %}
+    {% endblock content %}
+
+    {% include 'cvl_app/partials/footer.html' %}
+
+    <script src="{% static 'js/script.js' %}"></script>
+    {% block extend_footer %}{% endblock extend_footer %}
+</body>
+</html>

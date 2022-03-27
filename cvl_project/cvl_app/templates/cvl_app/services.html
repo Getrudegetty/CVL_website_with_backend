@@ -1,0 +1,105 @@
+{% extends 'cvl_app/base.html' %}
+{% load static %}
+
+
+{% block title %}{% endblock title %}
+{% block description %}{% endblock description %}
+{% block keywords %}{% endblock keywords %}
+
+{% block extend_header %}{% endblock extend_header %}
+
+{% block extend_footer %}{% endblock extend_footer %}
+
+{% block content %}
+<div class="serv" id="serv">
+  <a href="{% url 'cvl_app:services' %}" class="bnt">HOME PAGE</a>
+
+  <h1>OUR SERVICES</h1>
+  <div class="connten">
+    <div class="rooow">
+      <div class="yote1">
+        <div class="img">
+          <img src="{% static 'book img.png' %}" />
+        </div>
+        <div class="word" id="one">
+          <h4>BOOKKEEPING</h4>
+          <p>
+            Bookkeeping can provide you with the critical information to run
+            your business effectively and efficiently whether the enterprise
+            is your business or your personal life. In our book keeping
+            suite,we prepare timely and accurate monthly financials, then
+            consult with you to interpret and understand the contents of
+            your income statement, balance sheet, and cash flow statement.
+            We discuss ways to make your business more profitable.
+          </p>
+        </div>
+      </div>
+      <div class="yote2">
+        <div class="word" id="two">
+          <h4>TAX ADVISORY</h4>
+          <p>
+            we will serve you whether you are a starting, an individual, a
+            small business, aquiring or selling a business. With deep
+            understanding of the tax legislation for both personal and
+            corporate level we are focused to deliver expertised tax
+            advice,like advising clients regarding cash tax expenses for
+            purposes of business planning, forecasting and financial
+            modeling.<br />
+            We also help our clients obtain clarity regarding tax positions
+            by researching various complex business topics.
+          </p>
+        </div>
+        <div class="img">
+          <img src="{% static 'tax img.png' %}" />
+        </div>
+      </div>
+      <div class="yote3">
+        <div class="img">
+          <img src="{% static 'investment img.png' %}" />
+        </div>
+        <div class="word" id="three">
+          <h4>INVESTMENT ADVISORY</h4>
+          <p>
+            As your trusted company we will discuss and set short and long
+            term financial goals for your business,through gaining a deep
+            understanding on you investment charts and through this we will
+            be able to monitor and compare your actual number to what we
+            budget and give you the proper guide
+          </p>
+        </div>
+      </div>
+      <div class="yote4">
+        <div class="word" id="four">
+          <h4>MANAGEMENT CONSULTANCY</h4>
+          <p>
+            With our professional consultancy programms we will help you
+            reach for new heights. <br />
+            Freedom come from support and independence. Let us take you
+            business to the next level with all the flexibility to manage
+            money the way you want
+          </p>
+        </div>
+        <div class="img">
+          <img src="{% static 'ment.jpg' %}" />
+        </div>
+      </div>
+      <div class="yote5">
+        <div class="img">
+          <img src="{% static 'secretarial img.png' %}" />
+        </div>
+        <div class="word" id="five">
+          <h4>COMPANY SECRETARIAL SERVICES</h4>
+          <p>
+            We will serve you with the following company sectretarial
+            services. These are,
+            <br />
+            Maintaining company records. Preparing and filling of returns
+            ,Issuing of accounting deadline Reminders and access to the
+            company records.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  {% endblock content %}
